@@ -15,6 +15,7 @@ import appStore from './utils/appStore';
 import Cart from './components/Cart';
 import HookDemo01 from './components/HookDemo01';
 import HookDemo02 from './components/HookDemo02';
+import HookDemo03 from './components/HookDemo03';
 
 const Grocery = lazy(() => import('./components/Grocery'));
 
@@ -77,6 +78,10 @@ const appRouter = createBrowserRouter([
             {
                 path: '/hook-demo-02',
                 element: <HookDemo02 />
+            },
+            {
+                path: '/hook-demo-03',
+                element: <HookDemo03 />
             },
         ],
         errorElement: <Error />
