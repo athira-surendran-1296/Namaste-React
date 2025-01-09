@@ -1,4 +1,5 @@
 import React, { memo, useCallback, useState } from 'react'
+// USE CALLBACK HOOK
 
 const Child = memo( // memo is used to prevent re-render of the child component
     ({onButtonClick}) => {
