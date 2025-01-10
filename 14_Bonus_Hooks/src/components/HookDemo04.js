@@ -5,7 +5,9 @@ import NotesMain from './NotesApp/NotesMain';
 const HookDemo04 = () => {
     return (
         <div>
-            <h1 className='font-bold text-blue-600'>Use Reducer example</h1>
+            <h1 className='font-bold text-blue-600'>
+                Use Reducer example
+            </h1>
             <NotesMain />
         </div>
     )

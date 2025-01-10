@@ -1,17 +1,17 @@
 import React from 'react'
+import Note from './Note'
 
-const NotesList = ({notes}) => {
+const NotesList = ({notes, onDeleteNote, onEditNote}) => {
     return (
         <div className='flex flex-col gap-2'>
             {
-                notes.map(note =>
-                    <div className='flex' key={note.id}>
-                        <p className='flex-1'>{note.content}</p>
-                        <div className='flex gap-2'>
-                            {/* <button className='bg-blue-300 text-white p-1 px-3 rounded-md'>Edit</button> */}
-                            <button className='bg-red-500 text-white p-1 px-3 rounded-md'>Delete</button>
-                        </div>
-                    </div>)
+                notes.map(note => 
+                        <Note key={note.id} 
+                              note={note} 
+                              onDeleteNote={onDeleteNote} 
+                              onEditNote={onEditNote} 
+                        />
+                )
             }
         </div>
     )
