@@ -12,7 +12,7 @@ const NotesMain = () => {
     ]);
 
     const addNote = (content) => {
-        setNotes([...notes, { id: notes.length, content: content, isEditing: true }])
+        setNotes([...notes, { id: notes.length, content: content, isEditing: false }])
     }
 
     const deleteNote = (id) => {
