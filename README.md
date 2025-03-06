@@ -1,1 +1,1 @@
-This repository was created to lean and explore React JS.
+This repository was created to learn and explore React JS.
